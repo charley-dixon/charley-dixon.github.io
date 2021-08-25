@@ -1,0 +1,305 @@
+/* Font import */
+@font-face {
+  font-family: "Roboto";
+  src: url("./../fonts/roboto/Roboto-Regular.ttf") format("truetype")
+}
+
+/* ----------------- Default Styles ----------------- */
+#coming-soon {
+  text-align: center;
+  padding: 20rem;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 10px;
+  color: black;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: Georgia;
+  font-size: 3.2rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: Georgia;
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+
+/* Buttons */
+.btn-white {
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 2px;
+  color: white;
+  box-shadow: 0px 0px 5px black;
+  font-size: 1.4rem;
+}
+
+.btn-white:hover {
+  background-color: rgba(255, 255, 255, .8);
+  color: black;
+  transition: all 200ms ease-in;
+}
+
+.btn-black {
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 2px;
+  color: black;
+  font-size: 1.6rem;
+}
+
+.btn-black:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  transition: all 200ms ease-in;
+}
+
+@media screen and (min-width: 865px) {
+  /* Navigation bar */
+  .menu {
+    margin: 0;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menu-item {
+    list-style: none;
+    margin-right: 10rem;
+  }
+
+  .menu-item a:hover {
+    color: rgba(0, 0, 0, 0.7);
+    transition: all 200ms ease-in;
+  }
+
+  /* Logo Adjustments */
+  .menu-item:first-child {
+    margin-right: auto;
+    margin-left: 5rem;
+    min-width: 205px;
+  }
+
+  .menu-item:first-child a {
+    font-size: 3.2rem;
+    font-family: Georgia;
+  }
+
+  .menu-item:first-child a:hover {
+    color: black; /* Prevent logo from changing colors on hover */
+  }
+
+  /* Footer */
+  footer {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social {
+    display: flex;
+    padding: 0;
+  }
+
+  .social-item {
+    list-style: none;
+    padding: 0 1.5rem;
+  }
+
+  .social-item a img {
+    width: 42px;
+    height: 42px;
+  }
+
+  footer a {
+    margin: 2rem 0;
+    text-decoration: underline;
+  }
+
+  /* ----------------- Landing Page ----------------- */
+  .home-background-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../media/temples-of-sun-and-moon.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 5rem;
+    padding: 20%;
+    flex-basis: 100%;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 6rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+  }
+
+  .cta h1 {
+    color: white;
+    text-shadow: 0px 0px 5px black;
+  }
+
+  /* ----------------- About Me ----------------- */
+  .about-me-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 500px;
+    align-items: center;
+  }
+
+  .about-me-column {
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 20rem;
+    max-width: 50rem;
+  }
+
+  .about-me-column:first-child {
+    background-image: url("../media/maroon-bells.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 25rem;
+    margin-left: 5rem;
+  }
+
+  .about-me-column h1 {
+    margin: 0px auto 0px 0px;
+  }
+
+  .about-me-portfolio-link {
+    text-decoration: underline;
+    font-weight: 900;
+  }
+
+ /* ----------------- Portfolio ----------------- */
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 500px;
+    align-items: center;
+    column-gap: 5rem;
+    margin: 0 5rem;
+  }
+
+  .project-thumbnail {
+    border-radius: 3rem 3rem;
+    border: 1px solid black;
+    padding: 10rem;
+  }
+
+  .project-thumbnail:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+  }
+
+  /* ----------------- Blog ----------------- */
+  .blog-header {
+    width: 100%;
+    height: 200px;
+    background-image: url("../media/maroon-bells.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* ----------------- Default Project Page Information ----------------- */
+  .project-title {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  /* ----------------- Lineup Builder ----------------- */
+  .lineup-builder-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .vertical-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin: 0 2.5rem;
+    border-radius: 1rem 1rem;
+    box-shadow: 0px 0px 5px black;
+  }
+
+  .vertical-container p {
+    margin: 0;
+  }
+
+  .vertical-container ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .vertical-container ul li {
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-bottom: 1px solid black;
+  }
+
+  .vertical-container ul li:hover {
+    background-color: rgb(20, 147, 255);
+    color: white;
+    cursor: pointer;
+  }
+
+  .vertical-container a {
+    margin: 1rem 0;
+  }
+
+  /* ----------------- Fitness Tracker ----------------- */
+  .fitness-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fitness-column {
+    padding: 1rem 5rem;
+    box-shadow: 0px 0px 3px black;
+    flex: 1 1 0px;
+    margin: 2rem;
+    border-radius: 3rem;
+    text-align: center;
+  }
+}

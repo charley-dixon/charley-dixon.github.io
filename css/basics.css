@@ -1,0 +1,106 @@
+/* This stylesheet is strictly a template for specified stylesheets to build off
+it's purpose is to be duplicated and built off of for specific projects (like web apps) */
+
+/* Font import */
+@font-face {
+  font-family: "Roboto";
+  src: url("./../fonts/roboto/Roboto-Regular.ttf") format("truetype")
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 10px;
+  color: black;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: Georgia;
+  font-size: 3.2rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: Georgia;
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+
+/* Navigation bar */
+.menu {
+  margin: 0;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-item {
+  list-style: none;
+  margin-right: 10rem;
+}
+
+.menu-item a:hover {
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 200ms ease-in;
+}
+
+/* Logo Adjustments */
+.menu-item:first-child {
+  margin-right: auto;
+  margin-left: 5rem;
+  min-width: 205px;
+}
+
+.menu-item:first-child a {
+  font-size: 3.2rem;
+  font-family: Georgia;
+}
+
+.menu-item:first-child a:hover {
+  color: black; /* Prevent logo from changing colors on hover */
+}
+
+/* Footer */
+footer {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  padding: 0;
+}
+
+.social-item {
+  list-style: none;
+  padding: 0 1.5rem;
+}
+
+.social-item a img {
+  width: 42px;
+  height: 42px;
+}
+
+footer a {
+  margin: 2rem 0;
+  text-decoration: underline;
+}
