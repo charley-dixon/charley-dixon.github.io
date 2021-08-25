@@ -244,6 +244,11 @@ p {
   }
 
   /* ----------------- Lineup Builder ----------------- */
+  .lineup-builder {
+    background-color: rgb(154, 196, 52);
+    padding-bottom: 5rem;
+  }
+
   .lineup-builder-container {
     display: flex;
     justify-content: center;
@@ -258,6 +263,7 @@ p {
     margin: 0 2.5rem;
     border-radius: 1rem 1rem;
     box-shadow: 0px 0px 5px black;
+    background-color: white;
   }
 
   .vertical-container p {
