@@ -14,5 +14,8 @@ function newQuote() {
   // generate a number to grab a quote from that person
   let randomQuoteNumber = Math.floor(Math.random() * quotes[person].length);
   let quote = quotes[person][randomQuoteNumber];
-  return console.log(`"${quote}"`);
+  document.getElementById('quote-display').innerHTML = `"${quote}"`;
+  document.getElementById('person-display').innerHTML = `— ${person}`;
 }
+
+document.getElementById("quote-generator").addEventListener("click", newQuote);
