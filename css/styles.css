@@ -44,6 +44,12 @@ p {
   margin: 2rem 0;
 }
 
+blockquote {
+  text-align: center;
+  font-size: 3rem;
+  font-family: Georgia;
+}
+
 /* Buttons */
 .btn-white {
   padding: 0.75rem 2rem;
@@ -79,6 +85,10 @@ p {
 
 @media screen and (min-width: 865px) {
   /* Navigation bar */
+  nav {
+    position: static;
+  }
+
   .menu {
     margin: 0;
     padding: 2rem 0;
@@ -173,28 +183,30 @@ p {
 
   /* ----------------- About Me ----------------- */
   .about-me-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 500px;
-    align-items: center;
+    display: flex;
+    height: 70vh;
+    /* align-items: flex-start; */
   }
 
   .about-me-column {
-    padding: 10rem;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 25rem;
-    max-width: 50rem;
   }
 
   .about-me-column:first-child {
     background-image: url("../media/maroon-bells.jpeg");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top center;
-    padding: 25rem;
+    background-position: center;
     margin-left: 5rem;
+  }
+
+  .about-me-column:nth-child(2) {
+    align-self: center;
+    margin-right: 5rem;
+    padding: 0 5rem;
   }
 
   .about-me-column h1 {
@@ -202,44 +214,84 @@ p {
   }
 
   .about-me-portfolio-link {
-    text-decoration: underline;
     font-weight: 900;
   }
 
-  .skills-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    background-color: black;
-    margin: 5rem 0;
+  .about-me-portfolio-link:hover {
+    text-decoration: underline;
+  }
+
+  .char-container h3 {
+    font-size: 3.2rem;
+  }
+
+  .char-container {
+    display: grid;
+    grid-template-areas:
+      "a a b"
+      "c e b"
+      "c d d";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 30vh;
+    margin-top: 5rem;
+    border-top: 1.5rem solid black;
+    border-bottom: 1.5rem solid black;
     color: white;
   }
 
-  .skills-container h3 {
-    font-size: 3.2rem;
-    margin: 1rem 0 3.2rem 0;
+  .skills-container {
+    background-color: #3F681C;
+    grid-area: a;
   }
 
   .skills {
     display: flex;
-    width: 30%;
+    width: 50%;
     justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .hobbies-container {
+    background-color: #375E97;
+    grid-area: b;
+  }
+
+  .hobbies ul {
+    list-style: none;
+    font-size: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.3;
+  }
+
+  .wotd-container {
+    grid-area: c;
+    background-color: #FFBB00;
+  }
+
+  .qotd-container {
+    grid-area: d;
+    background-color: #FB6542;
+  }
+
+  .other-container {
+    grid-area: e;
+    background-image: url("../media/temples-of-sun-and-moon.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
  /* ----------------- Portfolio ----------------- */
   .portfolio-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 500px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 300px;
     align-items: center;
-    column-gap: 5rem;
+    /* column-gap: 5rem; */
     margin: 0 5rem;
   }
 
   .project-thumbnail {
-    border-radius: 3rem 3rem;
     border: 1px solid black;
     padding: 10rem;
   }
@@ -247,6 +299,7 @@ p {
   .project-thumbnail:hover {
     background-color: rgba(0, 0, 0, 1);
     color: white;
+    box-shadow: 0px 0px 10px black;
   }
 
   /* ----------------- Blog ----------------- */
