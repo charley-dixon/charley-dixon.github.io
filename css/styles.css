@@ -103,7 +103,7 @@ blockquote {
   }
 
   .menu-item a:hover {
-    color: rgba(0, 0, 0, 0.7);
+    text-decoration: underline;
     transition: all 200ms ease-in;
   }
 
