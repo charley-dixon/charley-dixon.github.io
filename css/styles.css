@@ -17,7 +17,8 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  min-width: 1440px;
 }
 
 h1 {
@@ -42,12 +43,6 @@ a {
 p {
   font-size: 1.6rem;
   margin: 2rem 0;
-}
-
-blockquote {
-  text-align: center;
-  font-size: 3rem;
-  font-family: Georgia;
 }
 
 /* Buttons */
@@ -78,269 +73,81 @@ blockquote {
 }
 
 .btn-black:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: black;
   color: white;
   transition: all 200ms ease-in;
 }
 
-@media screen and (min-width: 865px) {
-  /* Navigation bar */
-  nav {
-    position: static;
-  }
+/* Navigation bar */
+nav {
+  position: static;
+}
 
-  .menu {
-    margin: 0;
-    padding: 2rem 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+.menu {
+  margin: 0;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
-  .menu-item {
-    list-style: none;
-    margin-right: 10rem;
-  }
+.menu-item {
+  list-style: none;
+  margin-right: 10rem;
+}
 
-  .menu-item a:hover {
-    text-decoration: underline;
-    transition: all 200ms ease-in;
-  }
+.menu-item a:hover {
+  text-decoration: underline;
+  transition: all 200ms ease-in;
+}
 
-  /* Logo Adjustments */
-  .menu-item:first-child {
-    margin-right: auto;
-    margin-left: 5rem;
-    min-width: 205px;
-  }
+/* Logo Adjustments */
+.menu-item:first-child {
+  margin-right: auto;
+  margin-left: 5rem;
+  min-width: 205px;
+}
 
-  .menu-item:first-child a {
-    font-size: 3.2rem;
-    font-family: Georgia;
-  }
+.menu-item:first-child a {
+  font-size: 3.2rem;
+  font-family: Georgia;
+}
 
-  .menu-item:first-child a:hover {
-    color: black; /* Prevent logo from changing colors on hover */
-  }
+.menu-item:first-child a:hover {
+  color: black; /* Prevent logo from changing colors on hover */
+}
 
-  /* Footer */
-  footer {
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+/* Footer */
+footer {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .social {
-    display: flex;
-    padding: 0;
-  }
+.social {
+  display: flex;
+  padding: 0;
+}
 
-  .social-item {
-    list-style: none;
-    padding: 0 1.5rem;
-  }
+.social-item {
+  list-style: none;
+  padding: 0 1.5rem;
+}
 
-  .social-item a img {
-    width: 42px;
-    height: 42px;
-  }
+.social-item a img {
+  width: 42px;
+  height: 42px;
+}
 
-  footer a {
-    margin: 2rem 0;
-    text-decoration: underline;
-  }
+footer a {
+  margin: 2rem 0;
+  text-decoration: underline;
+}
 
-  /* ----------------- Landing Page ----------------- */
-  .home-background-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../media/temples-of-sun-and-moon.jpeg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 5rem;
-    padding: 20%;
-    flex-basis: 100%;
-  }
-
-  .cta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 6rem;
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 5px black;
-    border-radius: 5px;
-  }
-
-  .cta h1 {
-    color: white;
-    text-shadow: 0px 0px 5px black;
-  }
-
-  /* ----------------- About Me ----------------- */
-  .about-me-container {
-    display: flex;
-    height: 70vh;
-    /* align-items: flex-start; */
-  }
-
-  .about-me-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-me-column:first-child {
-    background-image: url("../media/maroon-bells.jpeg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: 5rem;
-  }
-
-  .about-me-column:nth-child(2) {
-    align-self: center;
-    margin-right: 5rem;
-    padding: 0 5rem;
-  }
-
-  .about-me-column h1 {
-    margin: 0px auto 0px 0px;
-  }
-
-  .about-me-portfolio-link {
-    font-weight: 900;
-  }
-
-  .about-me-portfolio-link:hover {
-    text-decoration: underline;
-  }
-
-  .char-container h3 {
-    font-size: 3.2rem;
-  }
-
-  .char-container {
-    display: grid;
-    grid-template-areas:
-      "a a b"
-      "c e b"
-      "c d d";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 30vh;
-    margin-top: 5rem;
-    border-top: 1.5rem solid black;
-    border-bottom: 1.5rem solid black;
-    color: white;
-  }
-
-  .skills-container {
-    background-color: #3F681C;
-    grid-area: a;
-  }
-
-  .skills {
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-
-  .hobbies-container {
-    background-color: #375E97;
-    grid-area: b;
-  }
-
-  .hobbies ul {
-    list-style: none;
-    font-size: 1rem;
-    text-align: center;
-    font-size: 2rem;
-    line-height: 2.3;
-  }
-
-  .wotd-container {
-    grid-area: c;
-    background-color: #FFBB00;
-  }
-
-  .qotd-container {
-    grid-area: d;
-    background-color: #FB6542;
-  }
-
-  .other-container {
-    grid-area: e;
-    background-image: url("../media/temples-of-sun-and-moon.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
- /* ----------------- Portfolio ----------------- */
-  .portfolio-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 300px;
-    align-items: center;
-    /* column-gap: 5rem; */
-    margin: 0 5rem;
-  }
-
-  .project-thumbnail {
-    border: 1px solid black;
-    padding: 10rem;
-  }
-
-  .project-thumbnail:hover {
-    background-color: rgba(0, 0, 0, 1);
-    color: white;
-    box-shadow: 0px 0px 10px black;
-  }
-
-  /* ----------------- Blog ----------------- */
-  .blog-body {
-    color: #2f2f2f;
-    background-color: #f9f7f1;
-  }
-
-  .blog-header {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-  }
-
-  #blog-logo {
-    font-family: Georgia;
-    font-size: 8rem;
-    text-transform: uppercase;
-    padding: 1rem 0;
-  }
-
-  .subheader {
-    padding: 1rem 0;
-    border-bottom: 2px solid #2f2f2f;
-    border-top: 2px solid #2f2f2f;
-    width: 95%;
-    margin: 0 2rem;
-  }
-
-  .blog-nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 50%;
-  }
-
-  /* ----------------- Default Project Page Information ----------------- */
-  .project-title {
-    text-align: center;
-    padding: 2rem 0;
-  }
+/* ----------------- Default Project Page Information ----------------- */
+.project-title {
+  text-align: center;
+  padding: 2rem 0;
 }

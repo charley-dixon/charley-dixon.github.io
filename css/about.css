@@ -1,0 +1,104 @@
+/* ----------------- About Me ----------------- */
+.about-me-container {
+  display: flex;
+  height: 70vh;
+}
+
+.about-me-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-column:first-child {
+  background-image: url("../media/maroon-bells.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5rem;
+}
+
+.about-me-column:nth-child(2) {
+  align-self: center;
+  margin-right: 5rem;
+  padding: 0 5rem;
+}
+
+.about-me-column h1 {
+  margin: 0px auto 0px 0px;
+}
+
+.about-me-portfolio-link {
+  font-weight: 900;
+}
+
+.about-me-portfolio-link:hover {
+  text-decoration: underline;
+}
+
+.char-container h3 {
+  font-size: 3.2rem;
+}
+
+.char-container {
+  display: grid;
+  grid-template-areas:
+    "a a b"
+    "c e b"
+    "c d d";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 30vh;
+  margin-top: 5rem;
+  border-top: 1.5rem solid black;
+  border-bottom: 1.5rem solid black;
+  color: white;
+}
+
+.skills-container {
+  background-color: #3F681C;
+  grid-area: a;
+}
+
+.skills {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.hobbies-container {
+  background-color: #375E97;
+  grid-area: b;
+}
+
+.hobbies ul {
+  list-style: none;
+  font-size: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.3;
+}
+
+.wotd-container {
+  grid-area: c;
+  background-color: #FFBB00;
+}
+
+blockquote {
+  text-align: center;
+  font-size: 3rem;
+  font-family: Georgia;
+}
+
+.qotd-container {
+  grid-area: d;
+  background-color: #FB6542;
+}
+
+.other-container {
+  grid-area: e;
+  background-image: url("../media/temples-of-sun-and-moon.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
