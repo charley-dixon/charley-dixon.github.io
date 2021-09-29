@@ -18,6 +18,7 @@
   <!-- <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
 
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/contact.css">
 </head>
 
 <body>
@@ -33,7 +34,30 @@
     </nav>
   </header>
   <main>
-    <h1 id="coming-soon">Coming Soon...</h1>
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form#the_htmlelementform_element -->
+    <!-- action attribute: defines the location (URL) where the form's collected data should be sent when it is submitted -->
+    <!-- method attribute: defines which HTTP method to send the data with (usually get or post). -->
+    <form action="donate.html" method="post">
+      <ul>
+        <li>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="user_name">
+        </li>
+        <li>
+          <label for="mail">Email</label>
+          <input type="email" id="mail" name="user_email">
+        </li>
+        <li>
+          <label for="msg">Message</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <li class="button">
+          <!-- A click on a submit button (the default value) sends the form's data
+          to the web page defined by the action attribute of the <form> element. -->
+          <button type="submit">Send your message</button>
+        </li>
+       </ul>
+    </form>
   </main>
   <footer>
     <ul class="social">

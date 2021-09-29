@@ -1,0 +1,46 @@
+form {
+  margin: 0 auto;
+  width: 40%;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: block;
+  font-size: 1.6rem;
+}
+
+input,
+textarea {
+  font: 1.4rem sans-serif;
+  width: 90%;
+  border: 1px solid #999;
+  border-radius: 0.5rem;
+  margin: auto;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  height: 10rem;
+}
+
+button {
+  margin: 0 auto;
+}
