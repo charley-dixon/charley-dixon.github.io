@@ -1,5 +1,3 @@
 # Portfolio
 
-Years ago I put together a portfolio using Wix. Recently I decided to commit myself to learning web development, and so I have rebuilt the entire portfolio from scratch using HTML & CSS.
-
-I have included a blog on here to talk about the various lessons learned, and eventually this will also host links to various web application projects that I want to build.
+I built this website to give myself a place to document the lessons I learn throughout life and practice my web development skills along the way. Two of the most important things I’ve learned are that curiosity is a prerequisite for personal growth and the pursuit of knowledge is a lifelong journey.

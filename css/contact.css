@@ -16,6 +16,10 @@ main {
   margin-left: 5rem;
 }
 
+/* You can style form elements based on whether the field is required or valid
+   This is important bc you can provide live feedback via JS script on the entry in a field by a user
+   https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes*/
+
 form {
   margin: 0 auto;
   width: 80%;
@@ -49,7 +53,7 @@ input,
 textarea {
   font: 1.4rem sans-serif;
   width: 80%;
-  border: 1px solid black;
+  border: 1px solid #999;
   border-radius: 0.5rem;
   margin: 0 auto;
   display: block;
@@ -61,6 +65,11 @@ input:focus,
 textarea:focus {
   /* Additional highlight for focused elements */
   border-color: #000;
+}
+
+input:required,
+textarea:required {
+  border: 1px solid black;
 }
 
 textarea {

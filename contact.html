@@ -40,23 +40,23 @@
     <div class="col">
     </div>
     <div class="col">
-      <form action="donate.html" method="post">
+      <form action="./donate.html" method="post">
         <h1>Let's Connect!</h1>
         <ul>
           <li>
             <input type="text" id="name" name="user_name" placeholder="Name">
           </li>
           <li>
-            <input type="email" id="mail" name="user_email" placeholder="Email">
+            <input type="email" id="mail" name="user_email" placeholder="Email" required>
           </li>
           <li>
             <input type="tel" id="tel" name="user_tel" placeholder="Phone">
           </li>
           <li>
-            <textarea id="msg" name="user_message" spellcheck="true" placeholder="Enter a message"></textarea>
+            <textarea id="msg" name="user_message" spellcheck="true" placeholder="Tell me something interesting" minlength="50" required></textarea>
           </li>
           <li class="button">
-            <button type="submit" class="btn-black">Send your message</button>
+            <button type="submit" class="btn-black">Send Message</button>
           </li>
          </ul>
 
