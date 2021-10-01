@@ -59,16 +59,12 @@ textarea {
   display: block;
   box-sizing: border-box;
   padding: 1rem;
+  background-color: white;
 }
 
 input:focus,
 textarea:focus {
   /* Additional highlight for focused elements */
-  border-color: #000;
-}
-
-input:required,
-textarea:required {
   border: 1px solid black;
 }
 

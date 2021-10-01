@@ -97,6 +97,10 @@ nav {
   margin-right: 10rem;
 }
 
+.active {
+  font-weight: bolder;
+}
+
 .menu-item a:hover {
   text-decoration: underline;
   transition: all 200ms ease-in;
