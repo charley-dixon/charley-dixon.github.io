@@ -70,6 +70,7 @@ p {
   border-radius: 2px;
   color: black;
   font-size: 1.6rem;
+  background-color: transparent;
 }
 
 .btn-black:hover {
