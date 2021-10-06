@@ -58,6 +58,11 @@ textarea {
   background-color: white;
 }
 
+input:invalid{
+  border-color: #900;
+  background-color: #FDD;
+}
+
 input:focus,
 textarea:focus {
   /* Additional highlight for focused elements */
@@ -71,4 +76,23 @@ textarea {
 button {
   margin: 0 auto;
   display: block;
+}
+
+/* This is the style of our error messages */
+.error {
+  width  : 80%;
+  margin: auto;
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 5px 5px 0 0;
+  box-sizing: border-box;
+  /* margin-left: 10%; */
+  display: block;
+  text-align: center;
+}
+
+.error.active {
+  padding: 1rem;
 }
