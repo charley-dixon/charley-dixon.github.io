@@ -4,14 +4,6 @@ h1 {
   text-shadow: 1px 1px 3px black;
 }
 
-.description p {
-  text-align: justify;
-  width: 45%;
-  margin: 0 auto;
-  color: white;
-  padding: 2rem;
-}
-
 .description {
   margin: 0 auto;
   background-color: black;
@@ -21,6 +13,13 @@ h1 {
   padding: 2rem 0;
 }
 
+.description p {
+  text-align: justify;
+  width: 45%;
+  margin: 0 auto;
+  color: white;
+  padding-bottom: 2rem;
+}
 
 /* ----------------- Projects ----------------- */
 .portfolio-container {
