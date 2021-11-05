@@ -38,5 +38,5 @@ function showError() {
     email.className = '';
     message.className = 'invalid';
   }
-  errorDisplay.className = 'error active';
+  errorDisplay.className = 'error live';
 }

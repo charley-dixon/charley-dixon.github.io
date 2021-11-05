@@ -8,14 +8,6 @@ main {
   flex: 1;
 }
 
-.col:first-child {
-  background-image: url("../media/maroon-bells.jpeg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: 5rem;
-}
-
 /* You can style form elements based on whether the field is required or valid
    This is important bc you can provide live feedback via JS script on the entry in a field by a user
    https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes*/
@@ -92,6 +84,6 @@ button {
   text-align: center;
 }
 
-.error.active {
+.error.live {
   padding: 1rem;
 }
