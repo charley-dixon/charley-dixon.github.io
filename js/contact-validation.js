@@ -10,7 +10,7 @@ const errorDisplay = document.querySelector('span.error')
 
 // event listener upon form submission that checks the validity of each field
 form.addEventListener('submit', function (event) {
-  if(!email.validity.valid || !phone.validity.valid || !message.validity.valid) {
+  if(!email.validity.valid || !message.validity.valid) {
     // If one of them in invalid, we display the appropriate error message
     showError();
     // Then we prevent the form from being sent by canceling the event
@@ -19,19 +19,24 @@ form.addEventListener('submit', function (event) {
 });
 
 function showError() {
-  // Check if phone AND email are empty
-  if(email.validity.valueMissing && phone.validity.valueMissing) {
-    // just made up errorDisplay b/c I'm think I will just put the error message
-    // in one field and then highlight the specific fields where the error is.
-    errorDisplay.textContent  = 'Please provide an email address OR a phone number';
+  // Check if email is empty
+  if(email.validity.valueMissing) {
+    errorDisplay.textContent  = 'Please provide an email address.';
+    email.className = 'invalid';
+    // resetting the class of the message name in case someone submits a form with an invalid message
+    message.className = '';
   } else if(email.validity.typeMismatch) {
-    errorDisplay.textContent = 'Please make sure you enter a valid email address';
-    // highlight the email field
-  } else if(phone.validity.typeMismatch) { // phone numbers only beotch
-    errorDisplay.textContent = 'Please make sure you enter a valid phone number';
+    errorDisplay.textContent = 'Please make sure you enter a valid email address.';
+    email.className = 'invalid';
+    message.className = '';
   } else if(message.validity.tooShort) {
-    errorDisplay.textContent = `Please give me at least ${message.minLength} characters... a little more than hello`
+    errorDisplay.textContent = `Please provide at least ${message.minLength} characters.`;
+    email.className = '';
+    message.className = 'invalid';
+  } else if(message.textLength === 0) {
+    errorDisplay.textContent = 'Please provide a message.';
+    email.className = '';
+    message.className = 'invalid';
   }
-
   errorDisplay.className = 'error active';
 }

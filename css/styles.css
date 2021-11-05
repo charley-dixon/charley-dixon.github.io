@@ -98,11 +98,16 @@ nav {
 
 .menu-item {
   list-style: none;
+  margin-right: 5rem;
+}
+
+.menu-item:last-child {
   margin-right: 10rem;
 }
 
 .active {
   font-weight: bolder;
+  text-decoration: underline;
 }
 
 .menu-item a:hover {

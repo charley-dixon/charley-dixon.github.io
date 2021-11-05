@@ -32,7 +32,7 @@ h1 {
 }
 
 p {
-  text-align: center;
+  /* text-align: center; */
 }
 
 ul {
@@ -58,7 +58,7 @@ textarea {
   background-color: white;
 }
 
-input:invalid{
+.invalid {
   border-color: #900;
   background-color: #FDD;
 }
@@ -80,15 +80,14 @@ button {
 
 /* This is the style of our error messages */
 .error {
-  width  : 80%;
+  width: 80%;
   margin: auto;
   padding: 0;
-  font-size: 80%;
+  font-size: 1.5rem;
   color: white;
   background-color: #900;
   border-radius: 5px 5px 0 0;
   box-sizing: border-box;
-  /* margin-left: 10%; */
   display: block;
   text-align: center;
 }

@@ -15,7 +15,7 @@
   <meta property="og:description" content="Charley Dixon's personal website.">
   <meta property="og:image" content="image.png">
 
-  <!-- <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+  <link rel="icon" href="./media/favicon.svg" type="image/x-icon">
 
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/contact.css">
@@ -30,7 +30,8 @@
         <li class="menu-item"><a href="index.html">Home</a></li>
         <li class="menu-item"><a href="about.html">About</a></li>
         <li class="menu-item"><a href="projects.html">Projects</a></li>
-        <!-- <li class="menu-item"><a href="blog.html">Blog</a></li> -->
+        <li class="menu-item"><a href="services.html">Services</a></li>
+        <li class="menu-item"><a href="https://medium.com/@dixoncharley" target="_blank">Blog</a></li>
         <li class="menu-item active"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -50,13 +51,13 @@
             <input type="text" id="name" name="user_name" placeholder="Name">
           </li>
           <li>
-            <input type="email" id="mail" name="user_email" placeholder="Email">
+            <input type="email" id="mail" name="user_email" placeholder="Email (required)" required>
           </li>
           <li>
             <input type="tel" id="tel" name="user_tel" placeholder="Phone">
           </li>
           <li>
-            <textarea id="msg" name="user_message" spellcheck="true" placeholder="Tell me something interesting"></textarea>
+            <textarea id="msg" name="user_message" spellcheck="true" placeholder="Send a message (minimum 20 characters)" minLength="20" required></textarea>
           </li>
           <li class="button">
             <button type="submit" class="btn-black">Send Message</button>
