@@ -14,11 +14,12 @@
 
 .about-me-column:first-child {
   margin-left: 5rem;
-  background-image: url('../media/profile.jpeg');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 50%;
+}
+
+#profile {
+  max-width: 60%;
+  height: auto;
+  margin: auto;
 }
 
 .about-me-column:nth-child(2) {

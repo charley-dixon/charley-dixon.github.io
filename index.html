@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en-US">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,48 +11,111 @@
   <meta name="author" content="Charley Dixon">
 
   <meta property="og:title" content="Charley Dixon">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.charleydixon.com">
-  <meta property="og:description" content="Charley Dixon's personal website.">
-  <meta property="og:image" content="image.png">
 
-  <link rel="icon" href="./media/favicon.svg" type="image/x-icon">
+  <!-- <link rel="icon" href="./media/favicon.svg" type="image/x-icon"> -->
 
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/desktop.css">
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul class="menu">
-        <li class="menu-item" ><a href="index.html">Charley Dixon</a></li>
-        <li class="menu-item active"><a href="index.html">Home</a></li>
-        <li class="menu-item"><a href="about.html">About</a></li>
-        <li class="menu-item"><a href="projects.html">Projects</a></li>
-        <li class="menu-item"><a href="services.html">Services</a></li>
-        <li class="menu-item"><a href="https://medium.com/@dixoncharley" target="_blank">Blog</a></li>
-        <li class="menu-item"><a href="contact.html">Contact</a></li>
+    <!-- Hamburger Menu -->
+    <!-- Home -->
+    <!-- About -->
+    <!-- Projects -->
+    <!-- Blog -->
+    <!-- Contact -->
+    <!-- Donate -->
+    <div id="desktop-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="https://medium.com/@dixoncharley" target="_blank">Blog</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
   <main>
-    <!-- Box that the image of the Temples of the Sun & Moon will fill in -->
-    <div class="home-background-image">
-      <!-- Box to house a button to "Learn More" and fill in with a transparent background -->
-      <div class="cta">
-        <h1>Stay <em>Curious</em></h1>
-        <a class="btn-white" href="about.html">Learn More</a>
+    <div class="text-tile tile">
+      <!-- Who I Am -->
+      <h2>👋 Hi, I'm Charley.</h2>
+      <p>I provide web services to businesses and individuals who approach short term growth with long term vision 🌎
+
+        <br>
+        <br>
+
+        I also like to <a href="https://medium.com/@dixoncharley" target="_blank">tell stories</a> ✍️
+      </p>
+      <a href="#contact-form" class="btn-black">Reach Out</a>
+      <!-- <button>Reach Out ✉️</button> -->
+    </div>
+    <div class="img-tile tile" id="about">
+      <!-- Background Image w CSS -->
+      <div class="tile-content">
+        <a href="#" class="btn">About Me</a>
       </div>
+    </div>
+    <div class="text-tile tile">
+      <!-- What I Do and How I can help you -->
+      <h2>Services</h2>
+      <div id="services">
+        <div class="service">
+          <img src="./media/writing.svg" alt="Paper and pencil icon">
+          <h3>Blogging</h3>
+        </div>
+        <div class="service">
+          <img src="./media/web-development.svg" alt="Web Development Icon">
+          <h3>Development</h3>
+        </div>
+        <!-- <div class="service">
+                <img src="./media/seo.svg" alt="Website design layout">
+                <h3>SEO</h3>
+            </div> -->
+        <div class="service">
+          <img src="./media/shopify.svg" alt="Shopify logo">
+          <h3>Shopify</h3>
+        </div>
+        <div class="service">
+          <img src="./media/wordpress.svg" alt="Wordpress logo">
+          <h3>Wordpress</h3>
+        </div>
+      </div>
+    </div>
+    <div class="img-tile tile" id="projects">
+      <!-- Background Image w CSS -->
+      <div class="tile-content">
+        <a href="https://github.com/charley-dixon" target="_blank" class="btn">Projects</a>
+      </div>
+    </div>
+
+    <!-- This will be a hidden dropdown that appears when the 'About Me' link is clicked -->
+    <div class="text-tile tile" id="contact-form">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <input type="submit" id="contact-submit">
+      </form>
     </div>
   </main>
   <footer>
-    <ul class="social">
-      <li class="social-item"><a href="https://twitter.com/chardeemacdixon" target="_blank"><img src="./media/social/twitter.svg"></a></li>
-      <li class="social-item"><a href="https://linkedin.com/in/charley-dixon" target="_blank"><img src="./media/social/linkedin.svg"></a></li>
-      <li class="social-item"><a href="https://github.com/charley-dixon" target="_blank"><img src="./media/social/github.svg"></a></li>
+    <p>&copy; 2022 by Charley Dixon</p>
+    <hr>
+    <ul>
+      <li><a href="https://medium.com/@dixoncharley" target="_blank">Blog</a></li>
+      <li><a href="https://linkedin.com/in/charley-dixon" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/charley-dixon" target="_blank">Github</a></li>
+      <li><a href="https://twitter.com/chardeemacdixon" target="_blank">Twitter</a></li>
+      <li><a href="https://instagram.com/chardeemacdixon" target="_blank">Instagram</a></li>
+      <li><a href="./donate.html">Donate</a></li>
     </ul>
-    <p>© 2021 by Charley Dixon</p>
   </footer>
 </body>
+
 </html>

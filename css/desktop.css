@@ -1,0 +1,69 @@
+/** @format */
+
+@media only screen and (min-width: 600px) {
+  header {
+    font-family: sans-serif;
+    background-color: black;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #desktop-menu {
+    display: block;
+  }
+
+  #desktop-menu ul {
+    padding: 2rem 0;
+    margin: 0;
+    border-bottom: 1px solid black;
+  }
+
+  #desktop-menu li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 2rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .tile:first-child {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .tile:first-child h2 {
+    font-size: 2rem;
+  }
+
+  .tile:first-child p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
+  .tile:nth-child(3) {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .tile-content {
+    height: 60vh;
+  }
+
+  .btn:hover {
+    background-color: black;
+  }
+
+  form {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  #contact-submit:hover {
+    cursor: pointer;
+  }
+}

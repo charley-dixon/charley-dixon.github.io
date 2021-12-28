@@ -1,0 +1,197 @@
+/** @format */
+#desktop-menu {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.tile {
+  overflow: auto; /* Prevents a child of .tile from having margins push outside .tile */
+  padding: 1rem 1.5rem;
+}
+
+.tile p {
+  font-family: sans-serif;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+/* First Tile */
+.tile:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1.5rem;
+}
+
+.tile:nth-child(3) h2 {
+  text-align: center;
+  margin-bottom: 2.3rem;
+}
+
+/* Button appearance */
+.btn {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  font-family: sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn:active {
+  background-color: black;
+}
+
+.tile img {
+  max-width: 100%;
+}
+
+.tile-content {
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about {
+  /* background-image: url("../media/temples-of-sun-and-moon.jpeg"); */
+  background-image: url("../media/maroon-bells.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#projects {
+  /* background-image: url("../media/maroon-bells.jpeg"); */
+  background-image: url("../media/temples-of-sun-and-moon.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#contact-form {
+  background-color: hsl(217, 100%, 68%);
+  scroll-behavior: smooth;
+  color: white;
+  padding-bottom: 4rem;
+}
+
+#contact-form h2 {
+  text-align: center;
+}
+
+form {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+}
+
+#contact-submit {
+  margin-top: 1rem;
+  background-color: #0025a1;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Services icons */
+#services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 3rem;
+  padding: 2rem;
+}
+
+.service img {
+  width: 64px;
+  display: block;
+  margin: 0 auto;
+}
+
+.service h3 {
+  text-align: center;
+}
+
+.btn-black {
+  padding: 0.5rem 1rem;
+  font-family: sans-serif;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  text-align: center;
+  display: inline;
+}
+
+.btn-black:active {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style-type: none;
+  color: black;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  cursor: pointer;
+}
