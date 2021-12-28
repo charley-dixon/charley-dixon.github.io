@@ -1,9 +1,14 @@
 /** @format */
 
 @media only screen and (min-width: 600px) {
+  #mobile-menu {
+    display: none;
+  }
+
   header {
     font-family: sans-serif;
     background-color: black;
+    text-align: center;
   }
 
   header a {
@@ -18,7 +23,6 @@
   #desktop-menu ul {
     padding: 2rem 0;
     margin: 0;
-    border-bottom: 1px solid black;
   }
 
   #desktop-menu li {
@@ -31,8 +35,19 @@
     font-size: 2.5rem;
   }
 
+  /* BUTTONS */
+  .btn:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .btn-black:hover {
+    background-color: black;
+    color: white;
+  }
+
   .tile:first-child {
-    width: 50%;
+    padding: 3rem 25%;
     margin: 0 auto;
   }
 
@@ -45,8 +60,9 @@
     line-height: 1.8rem;
   }
 
+  /* ABOUT ME TILE */
   .tile:nth-child(3) {
-    width: 60%;
+    padding: 5rem 25%;
     margin: 0 auto;
   }
 
@@ -54,8 +70,15 @@
     height: 60vh;
   }
 
-  .btn:hover {
-    background-color: black;
+  /* SERVICES */
+  #services {
+    width: 50%;
+    margin: 0 auto;
+    gap: 10rem 20rem;
+  }
+
+  .service img {
+    width: 100%;
   }
 
   form {

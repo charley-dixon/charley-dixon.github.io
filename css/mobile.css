@@ -1,4 +1,10 @@
 /** @format */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+}
+
 #desktop-menu {
   display: none;
 }
@@ -7,14 +13,43 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
 
 header {
-  text-align: center;
-  height: 2rem;
+  text-align: right;
+  /* height: 2rem; */
   background-color: black;
+}
+
+#mobile-menu {
+  /* overflow: hidden;
+  position: relative; */
+  overflow: hidden;
+  background-color: none;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 1rem;
+  right: 1rem;
+  width: 100%; /* Full width */
+}
+
+#mobile-links {
+  display: none;
+}
+
+a.icon {
+  font-size: 2rem;
+  color: black;
+}
+
+#mobile-menu a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 h1,
@@ -23,11 +58,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
 }
 
 h2 {
   font-size: 2rem;
+}
+
+p {
+  font-family: Georgia, sans-serif;
 }
 
 .tile {
@@ -36,7 +76,6 @@ h2 {
 }
 
 .tile p {
-  font-family: sans-serif;
   line-height: 1.5rem;
   font-size: 1.1rem;
   margin-top: 0;
@@ -51,7 +90,15 @@ h2 {
   padding: 3rem 1.5rem;
 }
 
+.tile:first-child p a {
+  color: black;
+}
+
 .tile:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   background-color: black;
   color: white;
   text-align: justify;
@@ -64,24 +111,21 @@ h2 {
 
 /* Button appearance */
 .btn {
-  padding: 1rem 1.5rem;
-  border-radius: 1rem;
-  border: 3px solid rgba(255, 255, 255, 0.9);
-  font-family: sans-serif;
-  color: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 1rem;
+  font-family: Roboto, sans-serif;
+  color: white;
+  border: 3px solid white;
+  background-color: none;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin: 1rem auto;
   text-align: center;
-  font-family: sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
 }
 
 .btn:active {
-  background-color: black;
-}
-
-.tile img {
-  max-width: 100%;
+  background-color: white;
+  color: black;
 }
 
 .tile-content {
@@ -110,17 +154,19 @@ h2 {
 
 #contact-form {
   background-color: black;
-  scroll-behavior: smooth;
   color: white;
   padding-bottom: 4rem;
 }
 
-#contact-form h2 {
+#contact-form h2,
+#contact-form p,
+#contact-form a {
   text-align: center;
+  color: white;
 }
 
 form {
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -130,7 +176,7 @@ textarea {
   border: none;
   padding: 0.5rem;
   font-size: 1.5rem;
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 label {
@@ -150,8 +196,7 @@ label {
 #services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 3rem;
-  grid-column-gap: 3rem;
+  gap: 3rem;
   padding: 2rem;
 }
 
@@ -167,9 +212,10 @@ label {
 
 .btn-black {
   padding: 0.5rem 1rem;
-  font-family: sans-serif;
-  color: white;
-  background-color: black;
+  font-family: Roboto, sans-serif;
+  color: black;
+  background-color: none;
+  border: 2px solid black;
   text-decoration: none;
   font-size: 1.2rem;
   margin: 1rem auto;
@@ -184,7 +230,7 @@ label {
 
 footer {
   text-align: center;
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 footer ul {

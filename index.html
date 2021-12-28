@@ -13,26 +13,38 @@
   <meta property="og:title" content="Charley Dixon">
 
   <!-- <link rel="icon" href="./media/favicon.svg" type="image/x-icon"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <!-- Styling -->
   <link rel="stylesheet" href="./css/mobile.css">
   <link rel="stylesheet" href="./css/desktop.css">
 </head>
 
 <body>
   <header>
-    <!-- Hamburger Menu -->
-    <!-- Home -->
-    <!-- About -->
-    <!-- Projects -->
-    <!-- Blog -->
-    <!-- Contact -->
-    <!-- Donate -->
+    <!-- MOBILE/Tablet -->
+    <div id="mobile-menu">
+      <div id="mobile-links">
+        <a href="#">Home</a>
+        <a href="#about-section">About</a>
+        <a href="#contact-form">Contact</a>
+        <a href="https://github.com/charley-dixon" target="_blank">Projects</a>
+        <a href="https://medium.com/@dixoncharley" target="_blank">Blog</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+
+    <!-- DESKTOP -->
     <div id="desktop-menu">
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="https://github.com/charley-dixon" target="_blank">Projects</a></li>
+        <li><a href="#contact-form">Contact</a></li>
         <li><a href="https://medium.com/@dixoncharley" target="_blank">Blog</a></li>
       </ul>
     </div>
@@ -41,24 +53,27 @@
     <div class="text-tile tile">
       <!-- Who I Am -->
       <h2>👋 Hi, I'm Charley.</h2>
-      <p>I provide web services to businesses and individuals who approach short term growth with long term vision 🌎
+      <p>
+        I provide web services to businesses and individuals who approach short term growth with long term vision. 🌎
 
         <br>
         <br>
 
-        I also like to <a href="https://medium.com/@dixoncharley" target="_blank">tell stories</a> ✍️
+        I also like to <a href="https://medium.com/@dixoncharley" target="_blank">write</a>. ✍️
       </p>
-      <a href="#contact-form" class="btn-black">Reach Out</a>
-      <!-- <button>Reach Out ✉️</button> -->
+      <a href="#about-section" class="btn-black">Learn More</a>
     </div>
     <div class="img-tile tile" id="about">
       <!-- Background Image w CSS -->
       <div class="tile-content">
       </div>
     </div>
-    <div class="text-tile tile">
+    <div class="text-tile tile" id="about-section">
       <h2>About Me</h2>
-      <p>I am a self-taught programmer, natural storyteller, and hobby investor who is passionate about sports and recreation. Two of the most important things I’ve learned in life are that curiosity is a prerequisite for personal growth and the pursuit of knowledge is a lifelong journey.</p>
+      <p>
+        I am a self-taught programmer, natural storyteller, and hobby investor who is passionate about sports and recreation. Two of the most important things I’ve learned in life are that curiosity is a prerequisite for personal growth and the pursuit of knowledge is a lifelong journey.
+      </p>
+      <a href="#contact-form" class="btn">Reach Out</a>
     </div>
     <div class="text-tile tile">
       <!-- What I Do and How I can help you -->
@@ -96,11 +111,14 @@
     <!-- This will be a hidden dropdown that appears when the 'About Me' link is clicked -->
     <div class="text-tile tile" id="contact-form">
       <h2>Contact Me</h2>
+      <p>
+        <a href="#">me@charleydixon.com</a>
+      </p>
       <form>
         <label for="name">Name</label>
         <input type="text" id="name">
-        <label for="email">Email</label>
-        <input type="email" id="email">
+        <label for="phone">Phone</label>
+        <input type="text" id="phone">
         <label for="message">Message</label>
         <textarea name="message" id="message" cols="30" rows="10"></textarea>
         <input type="submit" id="contact-submit">
