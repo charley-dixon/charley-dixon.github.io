@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Portfolio
 
-I built this website to give myself a place to document the lessons I learn throughout life and practice my web development skills along the way. Two of the most important things I’ve learned are that curiosity is a prerequisite for personal growth and the pursuit of knowledge is a lifelong journey.
+This is a single-page web page that serves as a landing page to my digital identity. It links out to Twitter, Instagram, LinkedIn, Github, and Medium. It provides a basic understanding of the freelance web services that I intend to offer on Upwork, and uses HTML, CSS, and Javascript. It is hosted for free on Github pages, with the only cost being the domain at $12/year and hours of my time. I have really emphasized a mobile-first design for this website, as I want to share it through social platforms which would inevitably lead people to finding my website first on their phone.
