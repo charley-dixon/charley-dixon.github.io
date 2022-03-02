@@ -11,13 +11,16 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/script.js" defer></script>
   </head>
 
   <body>
     <header>
-        <a href="#">Logo</a>
+        <a href="#"><img src="./media/logo.png" alt="Book icon"></a>
         <i class="fa fa-bars icon" id="menu-toggle"></i>
     </header>
 
@@ -30,9 +33,8 @@
 
     <section id="hero">
       <div class="overlay flex-col jc-center pd-3">
-        <h2 class="fw-norm">I am a</h2>
-        <h1 class="fw-norm mtb-1">Digital Storyteller</h1>
-        <a class="btn btn-primary mtb-1" href="#about">Learn More</a>
+        <h1 class="fw-norm">Digital Storyteller</h1>
+        <a class="btn btn-primary" href="#about">Learn More</a>
       </div>
     </section>
     <section id="about">
@@ -40,8 +42,10 @@
       <div class="content-box">
         <!-- <iframe src="https://www.youtube.com/embed/Ju0UOrnWoZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         <h2 class="lh-60">Hi, I'm Charley 👋</h2>
-        <p class="justify">I help e-commerce businesses generate revenue in the same way that a publisher helps an author tell their story to the masses. More specifically, I provide services that pertain to building and maintaining online infrastructures ranging from custom web development to SEO, blogging, analytics, and more! Check out some examples my work below, and please reach out if you'd like to connect.</p>
-        <a href="#projects" class="btn btn-secondary mtb-1">See my work</a>
+        <p class="justify">I help Ecommerce businesses operate by building and maintaining online infrastructures. I view myself as a storyteller because I believe conveying a proper story allows a business to stand out and build trust with their customers. My services range from custom web development to SEO, blogging, analytics, and more!</p>
+        <br>
+        <p>Check out some examples my work below, and please reach out if you'd like to connect.</p>
+        <a href="#projects" class="btn btn-secondary">See my work</a>
       </div>
     </section>
 
@@ -75,14 +79,18 @@
 
     <section id="contact">
       <h2 class="text-center lh-60">Contact Me</h2>
-      <a href="#" class="text-center block lh-20">me@charleydixon.com</a>
-      <form action="#">
+      <div id="social-bar">
+        <a href="https://linkedin.com/in/charley-dixon" target="_blank"><img class="social-icon" src="./media/social/linkedin.svg" alt="Linkedin Logo"></a>
+        <a href="https://github.com/charley-dixon" target="_blank"><img class="social-icon" src="./media/social/github.svg" alt="Github Logo"></a>
+        <a href="mailto:me@charleydixon"><img class="social-icon" src="./media/social/email.png" alt="Github Logo"></a>
+      </div>
+      <form action="mailto:me@charleydixon.com" method="POST">
         <label for="name">Name</label>
         <input type="text" id="name">
         <label for="email">Email</label>
         <input type="email" id="email">
         <label for="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <textarea name="message" id="message" cols="30" rows="5"></textarea>
         <input type="submit" value="Submit" class="btn btn-secondary">
       </form>
     </section>
