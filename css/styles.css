@@ -25,7 +25,7 @@ header {
     height: 50px;
     z-index: 10;
     padding: 1rem;
-    box-shadow: 0px 0px 3px #000;
+    box-shadow: 0px 0px 3px #353839;
 }
 
 header img {
@@ -46,6 +46,7 @@ nav {
     opacity: 0;
     visibility: hidden;
     transition: visibility 0.5s, opacity 0.5s ease-in-out;
+    font-size: 1.5rem;
 }
 
 h1 {
@@ -55,7 +56,6 @@ h1 {
 
 a {
     text-decoration: none;
-    color: #000;
 }
 
 img {
@@ -64,9 +64,9 @@ img {
 }
 
 form {
+    display: flex;
     /* TEMPORARILY HIDING UNTIL I CAN GET EMAIL TO WORK */
     display: none;
-    /* display: flex; */
     flex-direction: column;
 }
 
@@ -81,10 +81,6 @@ textarea {
     border: 1px solid black;
 }
 
-.icon {
-    color: #000;
-}
-
 .btn {
     padding: 0.5rem 1rem;
     font-weight: bold;
@@ -95,18 +91,25 @@ textarea {
 }
 
 .btn:hover {
-    opacity: 0.8;
-    transition: opacity 400ms ease-in-out;
+    transition: background-color 600ms linear;
 }
 
 .btn-primary {
     background: #FAF9F6;
-    color: #000;
+    color: #353839;
+}
+
+.btn-primary:hover {
+    background-color: rgba(250, 249, 246, 0.8);
 }
 
 .btn-secondary {
-    background: black;
-    color: white;
+    background: #353839;
+    color: #FAF9F6;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(53, 56, 57, 0.8);
 }
 
 .overlay {
@@ -183,6 +186,16 @@ textarea {
     font-weight: normal;
 }
 
+.c-primary {
+    /* Onyx */
+    color: #353839;
+}
+
+.c-secondary {
+    /* Off White */
+    color: #FAF9F6;
+}
+
 #menu-toggle:hover {
     cursor: pointer;
 }
@@ -193,21 +206,24 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #FAF9F6;
     text-align: center;
 }
 
 #hero h1,
 #hero h2 {
-    text-shadow: 1px 1px 8px #000;
+    text-shadow: 1px 1px 8px #353839;
 }
 
 #hero .btn {
-    box-shadow: 1px 1px 8px #000;
+    box-shadow: 1px 1px 8px #353839;
+}
+
+#hero .btn:hover {
+    box-shadow: 0px 0px 10px #FAF9F6;
+    transition: box-shadow 600ms;
 }
 
 #about {
-    /* background: #e6e798; */
     background: #FAF9F6;
 }
 
@@ -219,12 +235,14 @@ textarea {
 }
 
 #projects {
-    background: #000;
-    color: white;
+    background: #353839;
+    display: none;
+    color: #FAF9F6;
 }
 
 #blog {
     background: cornflowerblue;
+    display: none;
 }
 
 #contact {
