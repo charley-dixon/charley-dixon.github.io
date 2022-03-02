@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+section {
+    padding: 0 1rem;
+}
+
+header, 
+nav {
+    background: black;
+}
+
+header a,
+nav a {
+    color: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* header needs to remain same height as the ::before margin on sections */
+    height: 50px;
+    z-index: 10;
+    padding: 0 1rem;
+}
+
+nav {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 0;
+    /* opacity is here so that we can add a transition when the nav is toggled; visibility cannot have a smooth transition on its own */
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.5s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 0.5rem;
+}
+
+input {
+
+}
+
+h1 {
+    line-height: 80px;
+}
+
+.icon {
+    color: white;
+}
+
+.btn {
+    border: 2px solid black;
+    border-radius: 3rem;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn:hover {
+    transition: background-color 400ms linear, color 400ms linear;
+}
+
+.btn-primary {
+    background: white;
+    color: black;
+}
+
+.btn-primary:hover {
+    background: black;
+    color: white;
+}
+
+.btn-secondary {
+    background: black;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: black;
+}
+
+.thumb-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    gap: 10px;
+}
+
+.project-thumbnail {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.recent-posts {
+    display: flex;
+    height: 300px;
+}
+
+.post {
+    flex: 1;
+    border: 1px solid blue;
+}
+
+/* INDIVIDUAL ADJUSTMENTS FOR HTML ELEMENTS */
+.element-center {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.block {
+    display: block;
+}
+
+.lh-20 {
+    line-height: 20px;
+}
+
+.lh-60 {
+    line-height: 60px;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.mtb-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#menu-toggle:hover {
+    cursor: pointer;
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about {
+    background: #e6e798;
+}
+
+
+#about .content-box {
+    display: flex;
+    flex-direction: column;
+}
+#blog {
+    background: cornflowerblue;
+}

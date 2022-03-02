@@ -1,142 +1,87 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio - Charley Dixon</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js" defer></script>
+  </head>
 
-<html lang="en-US">
+  <body>
+    <header>
+        <a href="#">Logo</a>
+        <i class="fa fa-bars icon" id="menu-toggle"></i>
+    </header>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <nav> 
+      <a class="nav-link" href="#about">About Me</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#" target="_blank">Blog</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
 
-  <title>Charley Dixon</title>
-  <meta name="description" content="Charley Dixon's personal website.">
-  <meta name="author" content="Charley Dixon">
-
-  <meta property="og:title" content="Charley Dixon">
-
-  <!-- <link rel="icon" href="./media/favicon.svg" type="image/x-icon"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- Styling -->
-  <link rel="stylesheet" href="./css/mobile.css">
-  <link rel="stylesheet" href="./css/desktop.css">
-</head>
-
-<body>
-  <header>
-    <!-- MOBILE/Tablet -->
-    <div id="mobile-menu">
-      <div id="mobile-links">
-        <a href="#">Home</a>
-        <a href="#about-section">About</a>
-        <a href="#contact-form">Contact</a>
-        <a href="https://github.com/charley-dixon" target="_blank">Projects</a>
-        <a href="https://medium.com/@dixoncharley" target="_blank">Blog</a>
+    <section id="hero">
+      <h1>I am a Digital Storyteller</h1>
+      <a class="btn btn-primary m-1" href="#about">Learn More</a>
+    </section>
+    <section id="about">
+      <div class="content-box">
+        <!-- <iframe src="https://www.youtube.com/embed/Ju0UOrnWoZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <img src="./media/maroon-bells.jpeg" alt="Mountain valley">
+        <h2 class="lh-60">Hi, I'm Charley 👋</h2>
+        <p class="justify">I help e-commerce businesses generate revenue in the same way that a publisher helps an author tell their story to the masses. More specifically, I provide services that pertain to building and maintaining online infrastructures ranging from custom web development to SEO, blogging, analytics, and more! Check out some examples my work below, and please reach out if you'd like to connect.</p>
+        <a href="#projects" class="btn btn-secondary element-center mtb-1">See my work</a>
       </div>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    
+    </section>
 
-    <!-- DESKTOP -->
-    <div id="desktop-menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about-section">About</a></li>
-        <li><a href="https://github.com/charley-dixon" target="_blank">Projects</a></li>
-        <li><a href="#contact-form">Contact</a></li>
-        <li><a href="https://medium.com/@dixoncharley" target="_blank">Blog</a></li>
-      </ul>
-    </div>
-  </header>
-  <main>
-    <div class="text-tile tile">
-      <!-- Who I Am -->
-      <h2>👋 Hi, I'm Charley.</h2>
-      <p>
-        I provide web services to businesses and individuals who approach short term growth with long term vision. 🌎
-
-        <br>
-        <br>
-
-        I also like to <a href="https://medium.com/@dixoncharley" target="_blank">write</a>. ✍️
-      </p>
-      <a href="#about-section" class="btn-black">Learn More</a>
-    </div>
-    <div class="img-tile tile" id="about">
-      <!-- Background Image w CSS -->
-      <div class="tile-content">
-      </div>
-    </div>
-    <div class="text-tile tile" id="about-section">
-      <h2>About Me</h2>
-      <p>
-        I am a self-taught programmer, natural storyteller, and hobby investor who is passionate about sports and recreation. Two of the most important things I’ve learned in life are that curiosity is a prerequisite for personal growth and the pursuit of knowledge is a lifelong journey.
-      </p>
-      <a href="#contact-form" class="btn">Reach Out</a>
-    </div>
-    <div class="text-tile tile">
-      <!-- What I Do and How I can help you -->
-      <h2>Services</h2>
-      <div id="services">
-        <div class="service">
-          <img src="./media/writing.svg" alt="Paper and pencil icon">
-          <h3>Blogging</h3>
+    <section id="projects">
+      <h2 class="text-center lh-60">Projects</h2>
+      <div class="thumb-container">
+        <div class="project-thumbnail">
+          <h3>Bomb Bites</h3>
         </div>
-        <div class="service">
-          <img src="./media/web-development.svg" alt="Web Development Icon">
-          <h3>Development</h3>
+        <div class="project-thumbnail">
+          <h3>Sustainable Solutions</h3>
         </div>
-        <!-- <div class="service">
-                <img src="./media/seo.svg" alt="Website design layout">
-                <h3>SEO</h3>
-            </div> -->
-        <div class="service">
-          <img src="./media/shopify.svg" alt="Shopify logo">
-          <h3>Shopify</h3>
+        <div class="project-thumbnail">
+          <h3>EVOKE</h3>
         </div>
-        <div class="service">
-          <img src="./media/wordpress.svg" alt="Wordpress logo">
-          <h3>Wordpress</h3>
+        <div class="project-thumbnail">
+          <h3>The Baseball Dollar Game</h3>
         </div>
       </div>
-    </div>
-    <div class="img-tile tile" id="projects">
-      <!-- Background Image w CSS -->
-      <div class="tile-content">
-        
-      </div>
-    </div>
+    </section>
 
-    <!-- This will be a hidden dropdown that appears when the 'About Me' link is clicked -->
-    <div class="text-tile tile" id="contact-form">
-      <h2>Contact Me</h2>
-      <p>
-        <a href="#">me@charleydixon.com</a>
-      </p>
-      <form>
+    <section id="blog">
+      <h2 class="text-center lh-60">Blog Posts</h2>
+      <!-- Recent Blog Post Scroller with "See More" button to dedicated blog page -->
+      <div class="recent-posts">
+        <div class="post">1</div>
+        <div class="post">2</div>
+        <div class="post">3</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="text-center lh-60">Contact Me</h2>
+      <a href="#" class="text-center block lh-20">me@charleydixon.com</a>
+      <form action="#">
         <label for="name">Name</label>
         <input type="text" id="name">
-        <label for="phone">Phone</label>
-        <input type="text" id="phone">
+        <label for="email">Email</label>
+        <input type="email" id="email">
         <label for="message">Message</label>
         <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        <input type="submit" id="contact-submit">
+        <input type="submit" value="Submit" class="btn btn-secondary">
       </form>
-    </div>
-  </main>
-  <footer>
-    <p>&copy; 2022 by Charley Dixon</p>
-    <hr>
-    <ul>
-      <li><a href="https://medium.com/@dixoncharley" target="_blank">Blog</a></li>
-      <li><a href="https://linkedin.com/in/charley-dixon" target="_blank">LinkedIn</a></li>
-      <li><a href="https://github.com/charley-dixon" target="_blank">Github</a></li>
-      <li><a href="https://twitter.com/chardeemacdixon" target="_blank">Twitter</a></li>
-      <li><a href="https://instagram.com/chardeemacdixon" target="_blank">Instagram</a></li>
-      <li><a href="./donate.html">Donate</a></li>
-    </ul>
-  </footer>
-</body>
-
+    </section>
+  </body>
 </html>
