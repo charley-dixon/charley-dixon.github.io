@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/script.js" defer></script>
   </head>
@@ -21,35 +22,58 @@
   <body>
     <header>
         <a href="#"><img src="./media/logo.png" alt="Book icon"></a>
-        <i class="fa fa-bars icon c-primary" id="menu-toggle"></i>
+        <i class="fa fa-bars icon c-primary pointer" id="menu-toggle"></i>
     </header>
 
     <nav> 
       <a class="nav-link c-primary" href="#about">About Me</a>
       <a class="nav-link c-primary" href="#projects">Projects</a>
-      <a class="nav-link c-primary" href="#" target="_blank">Blog</a>
+      <a class="nav-link c-primary" href="#blog">Blog</a>
       <a class="nav-link c-primary" href="#contact">Contact</a>
     </nav>
 
-    <section id="hero">
+    <section id="hero" class="scroll-top">
       <div class="overlay flex-col jc-center pd-3">
         <h1 class="fw-norm c-secondary">Digital Storyteller</h1>
         <a class="btn btn-primary" href="#about">Learn More</a>
       </div>
     </section>
-    <section id="about">
-      <img src="./media/temples-of-sun-and-moon.jpeg" alt="Mountain valley">
+
+    <section id="about" class="bg-secondary scroll-top">
       <div class="content-box">
+        <img src="./media/temples-of-sun-and-moon.jpeg" alt="Mountain valley">
         <!-- <iframe src="https://www.youtube.com/embed/Ju0UOrnWoZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         <h2 class="lh-60">Hi, I'm Charley 👋</h2>
-        <p class="justify">I help Ecommerce businesses operate by building and maintaining online infrastructures. I view myself as a storyteller because I believe conveying a proper story allows a business to stand out and build trust with their customers. My services range from custom web development to SEO, blogging, analytics, and more!</p>
-        <br>
-        <p>Check out some examples my work below, and please reach out if you'd like to connect.</p>
-        <a href="#projects" class="btn btn-secondary">See my work</a>
+        <p class="lh-20">I improve e-commerce business operations by maintaining and building efficient online infrastructures. Storytelling is the most valuable skill I possess because a proper story communicates a clear and concise message that stands out in a loquacious field, and simultaneously builds trust with customers. Check out some video summaries of past projects below, and please reach out if you'd like to connect.</p>
+        <a href="#contact" class="btn btn-secondary">Reach out</a>
+      </div>
+      <hr class="divider">
+      <h3 class="text-center">Skills</h3>
+      <div id="service-container">
+        <div class="service">
+          <img src="" alt="">
+          <h4>Web Development</h4>
+        </div>
+        <div class="service">
+          <img src="" alt="">
+          <h4>Shopify</h4>
+        </div>
+        <div class="service">
+          <img src="" alt="">
+          <h4>Wordpress</h4>
+        </div>
+        <div class="service">
+          <img src="" alt="">
+          <h4>Google Analytics</h4>
+        </div>
+        <div class="service">
+          <img src="" alt="">
+          <h4>DNS</h4>
+        </div>
       </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="scroll-top">
       <h2 class="text-center lh-60">Projects</h2>
       <div class="thumb-container">
         <div class="project-thumbnail">
@@ -67,7 +91,7 @@
       </div>
     </section>
 
-    <section id="blog">
+    <section id="blog" class="scroll-top">
       <h2 class="text-center lh-60">Blog Posts</h2>
       <!-- Recent Blog Post Scroller with "See More" button to dedicated blog page -->
       <div class="recent-posts">
@@ -77,13 +101,8 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="bg-secondary scroll-top">
       <h2 class="text-center lh-60">Contact Me</h2>
-      <div id="social-bar">
-        <a href="https://linkedin.com/in/charley-dixon" target="_blank"><img class="social-icon" src="./media/social/linkedin.svg" alt="Linkedin Logo"></a>
-        <a href="https://github.com/charley-dixon" target="_blank"><img class="social-icon" src="./media/social/github.svg" alt="Github Logo"></a>
-        <a href="mailto:me@charleydixon"><img class="social-icon" src="./media/social/email.png" alt="Github Logo"></a>
-      </div>
       <form action="mailto:me@charleydixon.com" method="POST">
         <label for="name">Name</label>
         <input type="text" id="name">
@@ -91,8 +110,18 @@
         <input type="email" id="email">
         <label for="message">Message</label>
         <textarea name="message" id="message" cols="30" rows="5"></textarea>
-        <input type="submit" value="Submit" class="btn btn-secondary">
+        <input type="submit" value="Submit" class="btn btn-secondary pointer">
       </form>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98339.95492846836!2d-106.6905631291424!3d39.624420970855894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8741d905584ef48d%3A0x868624ba4785e76d!2sEdwards%2C%20CO%2081632!5e0!3m2!1sen!2sus!4v1646274010859!5m2!1sen!2sus" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
+    <footer>
+      <hr class="divider">
+      <div id="social-bar">
+        <a href="https://linkedin.com/in/charley-dixon" target="_blank"><img class="social-icon" src="./media/social/linkedin.svg" alt="Linkedin Logo"></a>
+        <a href="https://github.com/charley-dixon" target="_blank"><img class="social-icon" src="./media/social/github.svg" alt="Github Logo"></a>
+        <a href="mailto:me@charleydixon"><img class="social-icon" src="./media/social/email.png" alt="Github Logo"></a>
+      </div>
+      <p>© 2022 by Charley Dixon</p>
+    </footer>
   </body>
 </html>
