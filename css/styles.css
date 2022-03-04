@@ -46,7 +46,7 @@ nav {
     /* opacity is here so that we can add a transition when the nav is toggled; visibility cannot have a smooth transition on its own */
     opacity: 0;
     visibility: hidden;
-    transition: visibility 400ms, opacity 400ms ease-in-out;
+    transition: visibility 400ms, opacity 400ms;
     font-size: 1.5rem;
 }
 
@@ -75,6 +75,10 @@ h3 {
     'Times New Roman',
     Times,
     serif;
+    font-weight: normal;
+}
+
+h4 {
     font-weight: normal;
 }
 
@@ -152,6 +156,19 @@ footer {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.2);
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 1rem;
+    align-items: center;
+}
+
+.service img {
+    width: 50px;
+    margin-bottom: 1rem;
 }
 
 .thumb-container {
@@ -281,13 +298,23 @@ footer {
     flex-direction: column;
 }
 
+#service-container {
+    display: flex;
+    padding: 2rem 0;
+    text-align: center;
+}
+
 #projects {
     background: #353839;
     color: #FAF9F6;
+    /* Temporarily hiding until I have content */
+    display: none;
 }
 
 #blog {
     background: cornflowerblue;
+    /* Temporarily hiding until I have content */
+    display: none;
 }
 
 #contact {
